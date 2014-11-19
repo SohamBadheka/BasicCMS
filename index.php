@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
 
-  include("includes.php");//Aaama maro database selected chhe ane badhu aa file ma lakhelu chhe
+  include("includes.php");//Database configuration is provided here !
   
   if(!empty($_POST['user']) || !empty($_POST['pass']))
   
@@ -18,7 +18,7 @@ ini_set('display_errors', 'On');
     $pass = $row['pass'];
 
     
-     if($user1=="admincms" && $pass1=="admin_ohyea!")
+     if($user1=="admin" && $pass1=="admin")
      {
        session_start();
        $_SESSION['admin']="admin1";
